@@ -1,0 +1,279 @@
+/* إعدادات الخط والألوان الأساسية للموقع */
+:root {
+  --bg-dark: #060609;
+  --primary-orange: #ff7a30;
+  --primary-glow: rgba(255, 122, 48, 0.35);
+  --text-main: #ffffff;
+  --text-sub: #b0b0bc;
+  --text-muted: #71717a;
+  --card-bg: rgba(13, 13, 18, 0.7);
+  --card-border: rgba(255, 255, 255, 0.05);
+}
+
+body {
+  font-family: 'Cairo', sans-serif !important;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  overflow-x: hidden;
+}
+
+/* تنسيق الهيدر والشعار (Navbar) */
+.navbar {
+  background-color: rgba(6, 6, 9, 0.85) !important;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  padding: 15px 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-frame {
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.logo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brand-ar {
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.brand-en {
+  font-size: 0.8rem;
+  color: var(--primary-orange);
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  color: var(--text-sub) !important;
+  font-weight: 600;
+  padding: 8px 16px !important;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--primary-orange) !important;
+}
+
+/* الأزرار المضيئة */
+.btn-glow-orange {
+  background: var(--primary-orange);
+  color: #fff !important;
+  font-weight: 700;
+  padding: 10px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 4px 20px var(--primary-glow);
+  transition: all 0.3s ease;
+}
+
+.btn-glow-orange:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(255, 122, 48, 0.5);
+}
+
+.btn-secondary-custom {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: var(--text-main);
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary-custom:hover {
+  background: rgba(255,255,255,0.08);
+  color: var(--primary-orange);
+}
+
+/* كروت الخدمات والمميزات الاحترافية */
+.custom-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  padding: 35px 30px;
+  height: 100%;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 122, 48, 0.3);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 30px rgba(255, 122, 48, 0.05);
+}
+
+.card-icon-box {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 122, 48, 0.08);
+  border: 1px solid rgba(255, 122, 48, 0.2);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+  color: var(--primary-orange);
+}
+
+.card-title-custom {
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.card-desc-custom {
+  color: var(--text-sub);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* تنسيق حقول المدخلات (Inputs) */
+.form-control-custom {
+  background: rgba(255,255,255,0.03) !important;
+  border: 1px solid rgba(255,255,255,0.08) !important;
+  color: var(--text-main) !important;
+  padding: 14px 20px !important;
+  border-radius: 12px !important;
+}
+
+.form-control-custom:focus {
+  border-color: var(--primary-orange) !important;
+  box-shadow: 0 0 15px rgba(255, 122, 48, 0.2) !important;
+}
+
+/* كروت الاتصال */
+.contact-info-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact-info-card:hover {
+  background: rgba(255, 122, 48, 0.05);
+  border-color: rgba(255, 122, 48, 0.2);
+}
+
+.contact-info-icon {
+  font-size: 2rem;
+  color: var(--primary-orange);
+}
+/* تنسيق الفوتر الجديد الفخم */
+.custom-footer {
+  background-color: #040406;
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  padding: 60px 0 30px 0;
+}
+
+.footer-link:hover {
+  color: var(--primary-orange) !important;
+  padding-right: 5px;
+}
+
+/* أيقونات التواصل الاجتماعي وتأثيرات الإضاءة الخاصة بها */
+.footer-social-icon {
+  color: var(--text-sub);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-social-icon:hover {
+  transform: translateY(-3px);
+  color: #fff;
+}
+
+.footer-social-icon.insta:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  box-shadow: 0 4px 15px rgba(220, 39, 67, 0.4);
+}
+
+.footer-social-icon.whatsapp:hover {
+  background: #25D366;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+}
+
+.footer-social-icon.email:hover {
+  background: var(--primary-orange);
+  box-shadow: 0 4px 15px var(--primary-glow);
+}
+
+/* تأثير بسيط لزر الترجمة عند تمرير الفأرة فوقه */
+.btn-lang:hover {
+  color: var(--primary-orange) !important;
+}
+
+.btn-lang {
+  color: #ffffff;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+}
+
+.btn-lang:hover {
+  color: #ff7a30 !important;
+  background: rgba(255, 122, 48, 0.05);
+  border-color: rgba(255, 122, 48, 0.2);
+}
+
+/* تأثير النص المتحرك المضيء لاسم المنصة */
+.moving-brand-text {
+  color: #ff7a30;
+  text-shadow: 0 0 20px rgba(255, 122, 48, 0.6);
+  display: inline-block;
+  animation: smoothFloat 4s ease-in-out infinite;
+  background: linear-gradient(45deg, #ff7a30, #ffaa66, #ff7a30);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: smoothFloat 4s ease-in-out infinite, shineText 6s linear infinite;
+}
+
+/* حركة الطفو والتموج العلوية والسفلية ناعمة */
+@keyframes smoothFloat {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-6px) scale(1.02);
+    text-shadow: 0 0 30px rgba(255, 122, 48, 0.8);
+  }
+}
+
+/* حركة تموج الألوان البرتقالية داخل النص */
+@keyframes shineText {
+  to {
+    background-position: 200% center;
+  }
+}
